@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Controller</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <video id="video" width="600px" controls>
+        <source src="https://player.vimeo.com/external/250688977.sd.mp4?s=d14b1f1a971dde13c79d6e436b88a6a928dfe26b&profile_id=165">
+      </video>
+      <br>
+      <div class="button-container">
+        <button id="play">Play <br><img src="https://cdn0.iconfinder.com/data/icons/media-outline-1/60/001_-_play-512.png" alt="play icon"></button>
+        
+        <button id="stop"> Pause <br><img src="https://cdn0.iconfinder.com/data/icons/media-outline-1/60/004_-_Pause-128.png" alt="stop icon"></button>
+        
+        <button id="mute">Mute <br><img src="https://cdn0.iconfinder.com/data/icons/media-outline-1/60/015_-_Mute-128.png" alt="mute"></button>
+        
+        <button id="speedUp"><span id="speedText"></span> <br> Speed Up <br><img src="https://cdn3.iconfinder.com/data/icons/seo-web-5/48/watch_timer_speedup_boostup_fast_faster_fire-128.png" alt="speed up"></button>
+        
+        <button id="slowDown"><span id="speedText2"></span> <br> Slow Down <br><img src="https://cdn2.iconfinder.com/data/icons/traffic-signs-flat-colorful/2048/1686_-_Slow-512.png" alt="slow down"></button>
+        
+        <button id="reset">Reset Speed</button>
+        
+        <button id="volume-up"><span id="volume-text"></span><br><img src="https://cdn1.iconfinder.com/data/icons/media-player-icons-1/48/icon_more_volume-512.png" alt="volume"></button>
+        
+        <button id="volume-down">
+          <span id="volume-down-text"></span><br>
+          <img src="https://bit.ly/2AKwYA0" alt="volume down">
+        </button>
+        
+        <button id="loop"><span id="loopingText"></span> <br><img src="https://cdn2.iconfinder.com/data/icons/lightly-icons/30/loop-480.png" alt="infinity loop"></button>
+      </div>
+      <h4 class="hide" id="pausedText">Video paused.</h4>
+  <script src="./index.js"></script>
+</body>
+</html>
