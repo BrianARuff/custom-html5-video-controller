@@ -4,6 +4,8 @@ const video = select('#video');
 // default playback rate
 let speed = video.defaultPlaybackRate;
 
+let timer1, timer2;
+
 // querySelector shorthand
 function select(selector){
   return document.querySelector(selector);
@@ -113,7 +115,35 @@ select('#forward').addEventListener('click', () => {
 select('#backward').addEventListener('click', () => {
   video.currentTime -= 5;
   console.log(video.currentTime);
-})
+});
+
+// ***SLOW FRAME FORWARD***
+select('#frame-by-frame-forward').addEventListener('mousedown', () => {
+    timer1 = setInterval(() => {
+      video.pause();
+      video.currentTime += (1/60);
+    }, 1/60);
+});
+
+// ***CLEAR SLOW FRAME FOWARD***
+select('#frame-by-frame-forward').addEventListener('mouseup', () => {
+  clearInterval(timer1);
+  video.play();
+});
+
+// *** SLOW FRAME BACKWARD***
+select('#frame-by-frame-backward').addEventListener('mousedown', () => {
+  timer2 = setInterval(() => {
+    video.pause();
+    video.currentTime -= (1/60);
+  }, 1/60);
+});
+
+// ***CLEAR SLOW FRAME***
+select('#frame-by-frame-backward').addEventListener('mouseup', () => {
+  clearInterval(timer2);
+  video.play();
+});
 
 
 // set ***PAUSED*** ---Text---
