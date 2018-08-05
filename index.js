@@ -119,6 +119,7 @@ const togglePlayPausedText = setInterval(() => {
 
 // TODO
 // increase playback speed holding mouse down after 1 second
+// add volume bar
 
 
 // *******DISCOURAGED*******
