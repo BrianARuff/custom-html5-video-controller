@@ -62,15 +62,6 @@ select('#reset').addEventListener('click', () => {
     console.log(speed);
 });
 
-// ***LOOP*** video
-select('#loop').addEventListener('click', () => {
-  video.loop = !video.loop;
-  if(video.loop){
-    select('#loopingText').innerText = "Looping";
-  } else {
-    select('#loopingText').innerText = "";
-  }
-});
 
 // ***VOLUME UP***
 select('#volume-up').addEventListener('click', () => {
@@ -84,6 +75,16 @@ select('#volume-up').addEventListener('click', () => {
     setTimeout(() => {
       select('#volume-up').style.cssText = "background-color: #fff";
     }, 1000)
+  }
+});
+
+// ***LOOP*** video
+select('#loop').addEventListener('click', () => {
+  video.loop = !video.loop;
+  if(video.loop){
+    select('#loopingText').innerText = "Looping";
+  } else {
+    select('#loopingText').innerText = "";
   }
 });
 
@@ -101,6 +102,18 @@ select('#volume-down').addEventListener('click', () => {
   }
   console.log(video.volume);
 });
+
+// ***FORWARD***
+select('#forward').addEventListener('click', () => {
+  video.currentTime += 5;
+  console.log(video.currentTime);
+});
+
+// ***BACKWARD***
+select('#backward').addEventListener('click', () => {
+  video.currentTime -= 5;
+  console.log(video.currentTime);
+})
 
 
 // set ***PAUSED*** ---Text---
