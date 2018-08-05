@@ -128,7 +128,6 @@ select('#frame-by-frame-forward').addEventListener('mousedown', () => {
 // ***CLEAR SLOW FRAME FOWARD***
 select('#frame-by-frame-forward').addEventListener('mouseup', () => {
   clearInterval(timer1);
-  video.play();
 });
 
 // *** SLOW FRAME BACKWARD***
