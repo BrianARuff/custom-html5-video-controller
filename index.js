@@ -121,8 +121,8 @@ select('#backward').addEventListener('click', () => {
 select('#frame-by-frame-forward').addEventListener('mousedown', () => {
     timer1 = setInterval(() => {
       video.pause();
-      video.currentTime += (1/60);
-    }, 1/60);
+      video.currentTime += (1/30);
+    }, 300);
 });
 
 // ***CLEAR SLOW FRAME FOWARD***
@@ -135,14 +135,13 @@ select('#frame-by-frame-forward').addEventListener('mouseup', () => {
 select('#frame-by-frame-backward').addEventListener('mousedown', () => {
   timer2 = setInterval(() => {
     video.pause();
-    video.currentTime -= (1/60);
-  }, 1/60);
+    video.currentTime -= (1/30);
+  }, 300);
 });
 
-// ***CLEAR SLOW FRAME***
+// ***CLEAR SLOW FRAME BACKWARD***
 select('#frame-by-frame-backward').addEventListener('mouseup', () => {
   clearInterval(timer2);
-  video.play();
 });
 
 
