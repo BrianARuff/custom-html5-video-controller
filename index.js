@@ -112,14 +112,13 @@ const togglePlayPausedText = setInterval(() => {
   }
   if(video.ended){
     clearInterval(togglePlayPausedText);
-    select('#pausedText').innerText = "Movie ended";
   }
 }, 0);
 
 
 // TODO
 // increase playback speed holding mouse down after 1 second
-// add volume bar
+// add volume
 
 
 // *******DISCOURAGED*******
