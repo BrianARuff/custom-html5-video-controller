@@ -121,7 +121,7 @@ select('#backward').addEventListener('click', () => {
 select('#frame-by-frame-forward').addEventListener('mousedown', () => {
     timer1 = setInterval(() => {
       video.pause();
-      video.currentTime += (speed / 30);
+      video.currentTime += (1/30);
     }, 33);
 });
 
@@ -134,7 +134,7 @@ select('#frame-by-frame-forward').addEventListener('mouseup', () => {
 select('#frame-by-frame-backward').addEventListener('mousedown', () => {
   timer2 = setInterval(() => {
     video.pause();
-    video.currentTime -= (speed / 30);
+    video.currentTime -= (1/30);
   }, 33);
 });
 
