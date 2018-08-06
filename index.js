@@ -122,7 +122,7 @@ select('#frame-by-frame-forward').addEventListener('mousedown', () => {
     timer1 = setInterval(() => {
       video.pause();
       video.currentTime += (1/30);
-    }, 300);
+    }, 33);
 });
 
 // ***CLEAR SLOW FRAME FOWARD***
@@ -135,7 +135,7 @@ select('#frame-by-frame-backward').addEventListener('mousedown', () => {
   timer2 = setInterval(() => {
     video.pause();
     video.currentTime -= (1/30);
-  }, 300);
+  }, 33);
 });
 
 // ***CLEAR SLOW FRAME BACKWARD***
