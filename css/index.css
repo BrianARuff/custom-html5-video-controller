@@ -25,7 +25,8 @@ video {
   display: flex;
   flex-wrap: wrap;
   margin-top: -19px;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   justify-content: center;
   position: relative;
 }
@@ -34,6 +35,8 @@ video {
   margin: 5px 1%;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
+  max-width: 600px;
 }
 .button-container button img {
   width: 50px;
