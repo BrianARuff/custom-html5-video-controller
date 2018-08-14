@@ -146,11 +146,6 @@ select('#frame-by-frame-backward').addEventListener('mouseup', () => {
 
 // set ***PAUSED*** ---Text---
 const togglePlayPausedText = setInterval(() => {
-  if(video.paused && (video.currentTime > 0)){
-    select('#pausedText').classList.remove('hide');
-  } else {
-    select('#pausedText').classList.add('hide');
-  }
   if(video.ended){
     clearInterval(togglePlayPausedText);
   }
