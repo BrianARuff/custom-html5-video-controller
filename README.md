@@ -1,2 +1,2 @@
 # video-controller demo
-Code Pen: https://codepen.io/brff19/pen/yGvRvx
+https://htmlpreview.github.io/?https://github.com/BrianARuff/custom-html5-video-controller/blob/master/index.html
